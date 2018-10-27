@@ -14,5 +14,6 @@ RUN apt-get -qq update && \
     apt-get -qq update && \
     apt-get install -y --no-install-recommends nodejs \
                                                yarn \
-                                               build-essential && \
+                                               build-essential \
+                                               python-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
