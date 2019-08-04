@@ -13,7 +13,6 @@ RUN apt-get -qq update && \
     wget -qO- https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     apt-get -qq update && \
     apt-get install -y --no-install-recommends nodejs \
-                                               npm \
                                                yarn \
                                                build-essential \
                                                python-dev && \
